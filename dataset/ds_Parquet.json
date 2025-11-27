@@ -1,0 +1,20 @@
+{
+	"name": "ds_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adl",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "raw",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
